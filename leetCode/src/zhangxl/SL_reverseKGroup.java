@@ -46,6 +46,7 @@ public class SL_reverseKGroup {
 				
 			}*/
 		}
+		ListNode nextStart = pHead.next ;
 		//翻转
 		ListNode p = dummy ;
 		dummy.next = s.peek();
@@ -59,7 +60,7 @@ public class SL_reverseKGroup {
 		if(pHead.next == null){
 			return dummy.next ;
 		}
-		else p.next = reverseKGroup( pHead.next,k);
+		else p.next = reverseKGroup( nextStart,k);
 		return dummy.next ;
 	}
 	/**
@@ -69,18 +70,19 @@ public class SL_reverseKGroup {
 		// TODO Auto-generated method stub
 		
 		SL_reverseKGroup sl = new SL_reverseKGroup();
-		ListNode list1[] = new ListNode[5]; 
+		ListNode list1[] = new ListNode[6]; 
 		//初始化链表
 		list1[0] = sl.new ListNode(1);
 		list1[1] = sl.new ListNode(2);
 		list1[2] = sl.new ListNode(3);
 		list1[3] = sl.new ListNode(4);
 		list1[4] = sl.new ListNode(5);
+		list1[5] = sl.new ListNode(6);
 		
 		//构造链表
-		for(int i=0 ; i < 5 ; i++){
-			if( 4 == i)
-				list1[4].next = null ;
+		for(int i=0 ; i < 6 ; i++){
+			if( 5 == i)
+				list1[5].next = null ;
 			else list1[i].next = list1[i+1] ;
 		}
 		

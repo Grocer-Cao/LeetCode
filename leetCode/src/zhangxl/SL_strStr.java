@@ -12,7 +12,7 @@ public class SL_strStr {
 	 * @param needle
 	 * @return
 	 */
-	public int strStr(String haystack , String needle){
+	/*public int strStr(String haystack , String needle){
 		int i = 0 ; 
 		int j = 0 ;
 		while(i < (haystack.length()) && j < needle.length() ){
@@ -28,6 +28,9 @@ public class SL_strStr {
 				return i - j ;
 		}
 		return j!=needle.length() ? -1 : i - j ;
+	}*/
+	public int strStr(String haystack , String needle){
+		return 0 ;
 	}
 	/**
 	 * @param args

@@ -29,6 +29,9 @@ public class Solution01 {
 		int target = 9 ;
 		int[] results = new Solution01().twoSum(numbers , target);
 		System.out.println("index1="+results[0]+","+"index2="+results[1]);
+		
+		
+		
 	}
 
 }
